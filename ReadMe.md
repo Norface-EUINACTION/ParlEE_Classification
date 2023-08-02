@@ -1,4 +1,4 @@
-[] Add shell scripts
-[] Add Preprocessing code
-[] Add Training code
-[] Add Classification code
+- [] Add shell scripts
+- [] Add Preprocessing scripts
+- [] Add Training script
+- [] Add Classification script
