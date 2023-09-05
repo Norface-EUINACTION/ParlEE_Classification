@@ -7,7 +7,7 @@ CUDA_VISIBLE_DEVICES=0 python predict_labels.py \
 --pad_to_max_length False \
 --train_file ./cap/datasets/all_cats/train.csv \ 
 --per_device_eval_batch_size 128 \
---test_file ./data/norway_corpus_clean.csv \ # path to the file you want to run the country for
+--test_file ./data/spain_corpus_clean.csv \ # path to the file you want to run the country for
 --do_predict \
 --dataloader_num_workers 10 \
 --dataloader_pin_memory True \
