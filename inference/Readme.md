@@ -6,7 +6,7 @@ Models for EU and CAP are stored in the models directory. The python file *predi
 
 2. Similarly, to run CAP classifier, run './cap_predict_spain.sh'. You can create similar bash scripts for each country for CAP classifier.
 
-3. Both the EU and CAP bash files are same and only take difference parameters. In the below script, changing `eu_related` to `cap` will run the CAP classifier. `country` is
+3. Both the EU and CAP bash files are same and only take different parameters. In the below script, changing `eu_related` to `cap` will run the CAP classifier. `country` is
 for which country you want to run. `model_name_or_path` requires path of the model. You can adjust `per_device_eval_batch_size` according to your GPU. The results will be stored in the `output_dir`
 you specify with index as the main identifier. 
 
