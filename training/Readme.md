@@ -1,6 +1,6 @@
 # Training script for EU and CAP classifiers.
 
-The run the training for EU and CAP, simple run `./eu_train_eval.sh` and `./cap_train_eval.sh`. 
+The run the training for EU and CAP, simple run `./eu_train_eval.sh` and `./cap_train_eval.sh`. *(TODO: ADD TRAIN AND TEST SPLITS FOR EU AND CAP) You can find the training and validation data for EU and CAP in the dataset folders
 
 Both the scripts are similar. For example, the below script is for training a CAP classifier. To change the training from CAP to EU, simply replace `--task_name` with *eu_related*, the `--train_file`
 and `--validation_file` paths to the paths of EU training and validation set, and `--output_dir`. 
