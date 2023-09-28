@@ -2,7 +2,7 @@
 
 To run the training for EU and CAP, simple run `./eu_train_eval.sh` and `./cap_train_eval.sh`. **(TODO: ADD TRAIN AND TEST SPLITS FOR EU AND CAP)** You can find the training and validation data for EU and CAP in the dataset folders
 
-Both the scripts are similar. For example, the below script is for training a CAP classifier. To change the training from CAP to EU, simply replace `--task_name` with *eu_related*, the `--train_file`
+Both the scripts are similar. For example, the below script is for training a CAP classifier. To change the training from CAP to EU, simply replace `--task_name` with *eu_related*, the `--train_file`. The training and eval data are in the datasets folder for eu and cap. 
 and `--validation_file` paths to the paths of EU training and validation set, and `--output_dir`. 
 
 ```
@@ -13,8 +13,8 @@ python text_classification.py \
 --max_seq_length 512 \
 --pad_to_max_length False \
 --fp16 True \
---train_file ./cap/datasets/train.csv \
---validation_file ./cap/datasets/eval.csv \
+--train_file ./datasets/cap/train.csv \
+--validation_file ./datasets/cap/eval.csv \
 --do_train \
 --do_eval \
 --per_device_train_batch_size 4 \
